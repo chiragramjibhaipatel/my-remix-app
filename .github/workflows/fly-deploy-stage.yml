@@ -3,9 +3,9 @@
 
 name: Fly Deploy to Stage
 on:
-  push:
+  pull_request:
     branches:
-      - stage
+      - main
 jobs:
   deploy:
     name: Deploy app to Stage
