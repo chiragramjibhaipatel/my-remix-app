@@ -9,6 +9,9 @@ jobs:
   deploy:
     name: Deploy app
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://my-remix-app-shy-fog-6511.fly.dev
     concurrency: deploy-group    # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
